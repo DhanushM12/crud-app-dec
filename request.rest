@@ -1,0 +1,11 @@
+POST http://localhost:8000/subscriber
+Content-Type: application/json
+
+{
+    "name": "Sanchit",
+    "channel": "CN"
+}
+
+###
+
+GET http://localhost:8000/subscriber
