@@ -2,10 +2,28 @@ POST http://localhost:8000/subscriber
 Content-Type: application/json
 
 {
-    "name": "Sanchit",
+    "name": "abc",
     "channel": "CN"
 }
 
 ###
 
 GET http://localhost:8000/subscriber
+
+###
+
+GET http://localhost:8000/subscriber/63162c58e7b088822627d3b6
+
+
+###
+
+PATCH http://localhost:8000/subscriber/63162c58e7b088822627d3b6
+Content-Type: application/json
+
+{
+    "channel": "CN"
+}
+
+###
+
+DELETE http://localhost:8000/subscriber/63162c58e7b088822627d3b6
